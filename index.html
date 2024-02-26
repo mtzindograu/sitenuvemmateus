@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com pesquisa de CEP</title>
+</head>
+<body>
+    <input name="pesquisaCEP" id="pesquisaCEP" type="number" />
+    <input type="button" value="Buscar via CEP" onclick="buscarEndereconoViaCEP()">
+
+</body>
+</html>
+
+<script>
+   
+   function buscarEndereconoViaCEP() {
+    var componentePesquisaCep = document.getElementById("pesquisaCEP");
+    alert("O cep digitado é: " + componentePesquisaCep.value);
+    alert("Funcionou o click no botão buscar!");  
+   }
+
+</script>
